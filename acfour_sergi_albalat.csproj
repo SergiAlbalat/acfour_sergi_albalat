@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\acfour_library_sergi_albalat\acfour_library_sergi_albalat.csproj" />
+  </ItemGroup>
+
 </Project>
