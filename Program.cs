@@ -7,6 +7,7 @@ public class Program
         const string Msg1 = "Write how many numbers do you want to store";
         const string Msg2 = "Write a number";
         const string Msg3 = "Your numbers:";
+        const string Msg4 = "Your numbers in order:";
         int capacity;
         Console.WriteLine(Msg1);
         capacity = int.Parse(Console.ReadLine());
@@ -17,6 +18,9 @@ public class Program
             numbers[i] = int.Parse(Console.ReadLine());
         }
         Console.WriteLine(Msg3);
+        MyMethods.WriteResult(numbers);
+        MyMethods.OrderArray(ref numbers);
+        Console.WriteLine("\n{0}", Msg4);
         MyMethods.WriteResult(numbers);
     }
 }
